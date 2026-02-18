@@ -182,10 +182,16 @@ All Git & GitHub commands and what they do:
 | git stash | must use after `git add`, takes all currently staged files and hides them from a commit or switch |
 | git stash /filepath/  | stashes a specific filepath |
 | git stash pop | unstash the last thing that was stashed |
-| git stash pop /filepath/ | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+| git log  | list all commits |
+| git show | display last commit |
+| git show <commit_hash> | each commit has a hash to identify it, you can use this command to see it |
+| git checkout <branch_name> | moves you to a new branch |
+| git switch <branch_name> | does the same thing as git checkout <branch_name> |
+| git checkout -b <new_branch_name> | creates new branch |
+| git remote -v | displays all remote repositories currently connected |
+| git remote add origin <github_link.git> | add new remote repository under the name origin |
+| git remote remove <name> | remove remote repository link at that name |
+| git merge <branch_name> | merges <branch_name> into checked out branch |
+| git rebase <branch_name> | takes commits from <branch_name> and places them on top of all commits of checked out branch |
+
+Recommendations:
