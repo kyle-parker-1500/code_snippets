@@ -1,3 +1,6 @@
+<details>
+  <summary>Midterm 1 Snippets & Notes</summary>
+
 # Midterm 1 Snippets
 
 If statements:
@@ -568,5 +571,14 @@ __Black Box Testing:__
 
 ![Black Box vs White Box Testing](./images/blackbox_vs_whitebox.png)
 
+</details>
 
+<details>
+  <summary>Midterm 2 Snippets & Notes</summary>
 
+</details>
+
+<details>
+  <summary>Midterm 3 Snippets & Notes</summary>
+
+</details>
