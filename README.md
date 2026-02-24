@@ -3,6 +3,38 @@
 
 # Midterm 1 Snippets
 
+## Table of Contents
+
+- [Fundamentals of Java](#fundamentals-of-java)
+  1. [Git and GitHub](#git-and-github)
+  2. [Constructors](#constructors)
+  3. [Access Modifiers & UML](#access-modifiers-uml)
+  4. [Primitives & Wrappers](#primitives-wrappers)
+  5. [Boxing & Unboxing](#boxing-unboxing)
+  6. [ArrayList vs HashMap](#arraylist-vs-hashmap)
+  7. [Java Class Keywords](#java-class-keywords)
+  8. [this, new, & super](#this-new-super)
+  9. [Abstract vs Interface](#abstract-vs-interface)
+  10. [Extend vs Implement](#extend-vs-implement)
+  11. [Override vs Overload](#override-vs-overload)
+  12. [Testing: White Box vs Black Box](#testing-black-box-vs-white-box)
+- [Comparing Objects](#comparing-objects)
+- [Four Pillars of OOP](#four-pillars-of-oop-pie-a)
+  1. [Abstraction](#abstraction)
+  2. [Inheritance](#inheritance)
+  3. [Encapsulation](#encapsulation)
+  4. [Polymorphism](#polymorphism)
+- [Design Patterns](#design-patterns)
+  1. [Singleton](#singleton)
+  2. [Command](#command)
+  3. [Strategy](#strategy)
+
+<details>
+  <summary>Fundamentals of Java</summary>
+
+
+## Fundamentals of Java
+
 If statements:
 
 ```Java
@@ -158,7 +190,7 @@ try (Scanner scan = new Scanner(file)) {
 }
 ```
 
-Git and GitHub:
+## Git and GitHub:
 
 Git:
 
@@ -502,12 +534,12 @@ C) Canine dog = new Canine();
 ```
 
 __Answer (click to reveal):__
-<details>
-  <summary>Answer</summary>
+  <details>
+    <summary>Answer</summary>
 
-  B) `Animal animal = new Dog();`
+    B) `Animal animal = new Dog();`
 
-</details>
+  </details>
 
 ### Extend vs Implement
 
@@ -574,11 +606,553 @@ __Black Box Testing:__
 </details>
 
 <details>
-  <summary>Midterm 2 Snippets & Notes</summary>
+  <summary>Comparing Objects</summary>
+
+## Comparing Objects
+
+### Checking Object Type
+
+"__instanceof__" &rarr; a keyword for checking if a reference variable is containing a given type of object reference or not
+- returns a boolean (true/false)
+
+```Java
+for (Animal a : animals) {
+  if (a instanceof Dog) {
+    System.out.println("True!");
+  }
+}
+```
 
 </details>
 
 <details>
-  <summary>Midterm 3 Snippets & Notes</summary>
+  <summary>Four Pillars of OOP</summary>
+
+
+## Four Pillars of OOP (PIE-A)
+
+### Abstraction
+
+Using abstract methods and classes to provide the ability to reuse and modify code as needed.
+
+```Java
+// Abstract class
+abstract class Animal {
+  // abstract method (no body)
+  public abstract void animalSound();
+  // concrete method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+```
+
+```Java
+// Subclass (inherits from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: 'Sup boss");
+  }
+}
+```
+```Java
+class Main {
+  public static void main(String[] args) {
+    Animal animal = new Animal(); // will create error:
+    // must inherit from another class to access the abstract class 
+    Pig pig = new Pig();
+    pig.animalSound(); // prints 'Sup boss
+    pig.animalSound(); // prints Zzz
+  }
+}
+```
+
+### Inheritance
+
+Passing down fields and methods for other classes to use
+  - Extending classes & implementing interfaces
+
+```Java
+class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
+}
+```
+```Java
+class Car extends Vehicle {
+  private String model = "Mustang";
+  public static void main(String[] args) {
+    Car car = new Car();
+
+    // honk defined inside vehicle class
+    car.honk();
+
+    // display brand and model
+    System.out.println(car.brand + " " + car.model);
+  }
+}
+```
+
+### Encapsulation
+
+Hiding explicit data from objects that don't need to know about that data
+- Storing specific data into classes
+
+```Java
+class Person {
+  private String name;
+
+  // getter
+  public String getName() {
+    return name;
+  }
+
+  // setter
+  public void setName(String newName) {
+    this.name = newName;
+  }
+}
+```
+
+```Java
+public class Main {
+  public static void main(String[] args) {
+    Person person = new Person();
+    person.name = "John"; // error, can't access directly 
+    System.out.println(person.name); // error; still can't access directly
+    person.setName("Dr. C");
+    System.out.println(person.getName()); // prints "Dr. C"
+  }
+}
+```
+
+### Polymorphism
+Storing multiple objects into a single instance
+- Using a parent class as a container for the child class but not vice versa
+
+```Java
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal sounds like schrodinger's cat");
+  }
+}
+
+class Cat extends Animal {
+  public void animalSound() {
+    System.out.println("The cat says: ....");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: You killed him!");
+  }
+}
+```
+
+```Java
+class Main {
+  public static void main(String[] args) {
+    Animal animal = new Animal(); // create Animal object
+    Animal cat = new Cat();
+    Animal dog = new Dog();
+    animal.animalSound(); // prints: The animal sounds like schrodinger's cat
+    cat.animalSound(); // prints: The cat says: ....
+    dog.animalSound(); // prints: The dog says: You killed him!
+  }
+}
+```
+
+### Questions:
+
+Given the code: Which of the following are correct?
+```Java
+class Monster{}
+
+class Ghoul extends Monster{}
+
+class Werewolf extends Monster{}
+
+class Vampire extends Monster{}
+
+class Dracula extends Vampire{}
+```
+
+```Java
+A) Ghoul ghoul = new Monster();
+B) Vampire vampire = new Dracula();
+C) Monster monster = new Werewolf();
+D) Dracula dracula = new Vampire();
+```
+
+  <details>
+    <summary>Answer:</summary>
+    
+    B) `Vampire vampire = new Dracula();`
+
+    C) `Monster monster = new Werewolf();`
+
+    __Explanation:__
+    A parent class can be instantiated as its child class, but a child class cannot be instantiated as a parent class.
+
+  </details>
+
+<br>
+
+Given the code: Which of the following are correct?
+```Java
+class Animal{}
+
+class Dog extends Animal{}
+
+class Cat extends Animal{}
+
+class Bird extends Animal{}
+
+class Lion extends Cat{}
+```
+
+```Java
+A) Lion lion = new Cat();
+B) Bird bird = new Animal();
+C) Animal animal = new Dog();
+D) Cat cat = new Lion();
+```
+
+  <details>
+    <summary>Answers:</summary>
+
+    C) `Animal animal = new Dog();`
+
+    D) `Cat cat = new Lion();`
+
+  </details>
+
+
+</details>
+
+<details>
+  <summary>Design Patterns</summary>
+
+## Design Patterns
+
+### Singleton
+
+- Only one instance of an object may exist
+- You must use Class.getInstance() to access the object
+  - Cannot instantiate the object
+
+```Java
+public class Singleton {
+  private static Singleton instance = null;
+  private int singletonInt;
+
+  Singleton() {
+    singletonInt = 10;
+  }
+
+  public static Singleton getInstance() { // static methods require
+                                          // the class name to call: Singleton.getInstance()
+    if (instance == null) { // if a singleton doesn't exist yet instantiate one
+      instance = new Singleton();
+    }
+
+    return instance;
+  }
+
+  public static void main(String[] args) {
+    Singleton x = Singleton.getInstance();
+    Singleton y = Singleton.getInstance();
+    Singleton z = Singleton.getInstance();
+
+    System.out.println("x : " + x.singletonInt);
+    System.out.println("y : " + y.singletonInt);
+    System.out.println("z : " + z.singletonInt);
+
+    x.singletonInt = 15;
+
+    System.out.println("x : " + x.singletonInt);
+    System.out.println("y : " + y.singletonInt);
+    System.out.println("z : " + z.singletonInt);
+  }
+}
+// Prints:
+/*
+x : 10
+y : 10
+z : 10
+x : 15
+y : 15
+z : 15
+*/
+```
+![Singleton](./images/singleton.png)
+
+```Java
+public class SingleObject {
+  // create object of SingleObject 
+  private static SingleObject instance = new SingleObject();
+
+  // make constructor private so class can't be instantiated
+  private SingleObject(){}
+
+  // get only object available
+  public static SingleObject getInstance() {
+    return instance;
+  }
+
+  public void showMessage() {
+    System.out.println("Hello world!");
+  }
+
+  public static void main(String[] args) {
+    // illegal construct
+    // Compile time error: constructor SingleObject() is not visible
+    // SingleObject object = new SingleObject();
+
+    // only object available
+    SingleObject object = SingleObject.getInstance();
+
+    // show message
+    object.showMessage();
+  }
+}
+```
+
+### Command
+
+Encapsulates a request as an object
+  - Allows you to parameterize clients with different requests
+  - Stores actions or commands
+    - Copying commands into history list
+      - E.g.:
+      - Instant replay
+      - Undo/redo commands
+      - On/off commands
+
+```Java
+Queue queue;
+
+queue.add(Cara.do(surpriseAttack));
+queue.add(Mando.do(fightBack));
+queue.add(BabyYoda.do(sipTea));
+```
+```Java
+if (buttonPressed == button1) {
+  lights.on();
+}
+```
+
+Example Code:
+
+```Java
+interface Command {
+  public void execute(); // command will always have something named similar to execute
+}
+
+class Light {
+  public void on() {
+    System.out.println("Light is on");
+  }
+
+  public void off() {
+    System.out.println("Light is off"); 
+  }
+}
+
+class LightOnCommand implements Command {
+  Light light;
+
+  // constructor is passed the light it will control
+  public LightOnCommand(Light light) {
+    this.light = light;
+  }
+
+  public void execute() {
+    light.on();
+  }
+}
+
+class LightOffCommand implements Command {
+  Light light;
+  public LightOffCommand(Light light) {
+    this.light = light;
+  }
+  public void execute() {
+    light.off();
+  }
+}
+```
+
+```Java
+class Stereo {
+  public void on() {
+    System.out.println("Stereo is on");
+  }
+
+  public void off() {
+    System.out.println("Stereo is off");
+  }
+
+  public void setCD() {
+    System.out.println("Stereo is set for CD input");
+  }
+  
+  public void setDVD() {
+    System.out.println("Stereo is set for DVD input");
+  }
+
+  public void setRadio() {
+    System.out.println("Stereo is set for Radio input");
+  }
+
+  public void setVolume(int volume) {
+    System.out.printf("Stereo volume is set to %d volume%n", volume);
+  }
+}
+```
+
+```Java
+class StereoOffCommand implements Command {
+  Stereo stereo;
+  public StereoOffCommand(Stereo stereo) {
+    this.stereo = stereo;
+  }
+
+  public void execute() {
+    stereo.off();
+  }
+}
+
+class StereoOnWithCDCommand implements Command {
+  Stereo stereo;
+  public StereoOnWithCDCommand(Stereo stereo) {
+    this.stereo = stereo;
+  }
+  public void execute() {
+    stereo.on();
+    stereo.setCD();
+    stereo.setVolume(11);
+  }
+}
+```
+
+```Java
+// simple remote control with one button
+class SimpleRemoteControl {
+  Command slot; // only one button
+
+  public SimpleRemoteControl(){}
+
+  public void setCommand(Command command) {
+    // set the command the remote will execute
+    this.slot = command;
+  }
+
+  public void buttonWasPressed() {
+    slot.execute();
+  }
+}
+```
+
+```Java
+// Driver class
+class RemoteControlTest {
+  public static void main(String[] args) {
+    SimpleRemoteControl remote = new SimpleRemoteControl();
+    Light light = new Light();
+    Stereo stereo = new Stereo();
+
+    // change command dynamically
+    remote.setCommand(new LightOnCommand(light));
+    remote.buttonWasPressed();
+    remote.setCommand(new StereoOnWithCDCommand(stereo));
+    remote.buttonWasPressed();
+    remote.setCommand(new StereoOffCommand(stereo));
+    remote.buttonWasPressed();
+  }
+}
+```
+
+### Strategy
+
+Multiple variants of the same behavior
+  - Interchangable encapsulated behaviors
+
+```Java
+dog.setAction(new Howl());
+dog.doSomething();
+
+dog.setAction(new Sleep());
+dog.doSomething();
+```
+
+![Strategy](./images/strategy.png)
+
+```Java
+public interface Strategy {
+    public int doOperation(int num1, int num2);
+}
+```
+
+```Java
+// Addition Strategy
+public class OperationAdd implements Strategy {
+    @Override
+    public int doOperation(int num1, int num2) {
+        return num1 + num2;
+    }
+}
+
+// Subtraction Strategy
+public class OperationSubstract implements Strategy {
+    @Override
+    public int doOperation(int num1, int num2) {
+        return num1 - num2;
+    }
+}
+
+// Multiplication Strategy
+public class OperationMultiply implements Strategy {
+    @Override
+    public int doOperation(int num1, int num2) {
+        return num1 * num2;
+    }
+}
+```
+
+```Java
+public class Context {
+    private Strategy strategy;
+
+    public Context(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public int executeStrategy(int num1, int num2) {
+        return strategy.doOperation(num1, num2);
+    }
+}
+```
+
+```Java
+public class StrategyPatternDemo {
+    public static void main(String[] args) {
+        Context context = new Context(new OperationAdd());
+        System.out.println("10 + 5 = " + context.executeStrategy(10, 5));
+
+        context = new Context(new OperationSubstract());
+        System.out.println("10 - 5 = " + context.executeStrategy(10, 5));
+
+        context = new Context(new OperationMultiply());
+        System.out.println("10 * 5 = " + context.executeStrategy(10, 5));
+    }
+}
+```
+
+  </details>
+
 
 </details>
