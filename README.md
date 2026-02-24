@@ -1,5 +1,5 @@
 <details>
-  <summary>Midterm 1 Snippets & Notes</summary>
+  <summary>Midterm 1 Snippets and Notes</summary>
 
 # Midterm 1 Snippets
 
@@ -8,12 +8,12 @@
 - [Fundamentals of Java](#fundamentals-of-java)
   1. [Git and GitHub](#git-and-github)
   2. [Constructors](#constructors)
-  3. [Access Modifiers & UML](#access-modifiers-uml)
-  4. [Primitives & Wrappers](#primitives-wrappers)
-  5. [Boxing & Unboxing](#boxing-unboxing)
+  3. [Access Modifiers and UML](#access-modifiers-and-uml)
+  4. [Primitives and Wrappers](#primitives-and-wrappers)
+  5. [Boxing and Unboxing](#boxing-and-unboxing)
   6. [ArrayList vs HashMap](#arraylist-vs-hashmap)
   7. [Java Class Keywords](#java-class-keywords)
-  8. [this, new, & super](#this-new-super)
+  8. [this, new, and super](#this-new-and-super)
   9. [Abstract vs Interface](#abstract-vs-interface)
   10. [Extend vs Implement](#extend-vs-implement)
   11. [Override vs Overload](#override-vs-overload)
@@ -51,7 +51,7 @@ if (str1.equals(str2)) {
 }
 ```
 
-For loop & for each loop:
+For loop and for each loop:
 
 ```Java
 int[] testArr = {1, 2, 3, 4, 5};
@@ -64,7 +64,7 @@ for (int number : testArr) {
   System.out.print(number + " "); // prints each number in testArr
 }
 
-// for each with strings & chars
+// for each with strings and chars
 String line = "string";
 
 for (Character c : line.toCharArray()) {
@@ -72,7 +72,7 @@ for (Character c : line.toCharArray()) {
 }
 ```
 
-While loop & Modulus operator (%):
+While loop and Modulus operator (%):
 
 ```Java
 int[] arr = {1, 2, 3, 4, 5};
@@ -207,7 +207,7 @@ GitHub:
 
 - An online database of Git repositories
 
-All Git & GitHub commands and what they do:
+All Git and GitHub commands and what they do:
 
 | Command | What it does:|
 | -------------- | --------------- |
@@ -215,7 +215,7 @@ All Git & GitHub commands and what they do:
 | git add . | stages all changes for a commit |
 | git add /filepath/ | stages one specific path for a commit |
 | git commit -m "" | commits currently staged files with a given message |
-| git commit | opens up a VIM style terminal to write longer & more complex messages |
+| git commit | opens up a VIM style terminal to write longer and more complex messages |
 | git stash | must use after `git add`, takes all currently staged files and hides them from a commit or switch |
 | git stash /filepath/  | stashes a specific filepath |
 | git stash pop | unstash the last thing that was stashed |
@@ -262,7 +262,7 @@ public Monster(string type, int strength, int health) {
 }
 ```
 
-## Access Modifiers & UML
+## Access Modifiers and UML
 
 |  | Class | Package | Subclass | Global |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
@@ -306,7 +306,7 @@ _Remember!_ UML Access Modifier symbols in UML are based on location!
 
 - Direction arrow points: Can provide all the methods of the class the arrow is pointing at.
 
-## Primitives & Wrappers
+## Primitives and Wrappers
 
 __Primitive Types:__ int, double, char...
   - Simple types
@@ -316,7 +316,7 @@ __Wrapper Classes:__ Integer, Double, Character...
 
 ![Wrappers](./images/wrapper_class.png)
 
-## Boxing & Unboxing
+## Boxing and Unboxing
 __Boxing:__ Converting a primitive type &rarr; wrapper class
 
 ```Java
@@ -427,21 +427,21 @@ __Instance:__ `Card c = new Card();`
   - They can't be marked static
 
 __Static:__ `public static void m();`
-  - Can be applied to: methods & fields
+  - Can be applied to: methods and fields
   - Static members can be accessed without creating an instance of the object
 
 __Static Variables:__ `public static int num;`
   - Variable is shared by all instances of a class
 
 __Final:__ `public final void m();`
-  - Can be applied to: classes, methods, & fields
+  - Can be applied to: classes, methods, and fields
   - Makes things constant and prevents overriding
 
 __Final Variables:__ `public final SIZE = 5;`
 - Variables can only ever be assigned once and the value can never be changed
   - Variables marked with ALL_CAPS are typically final variables
 
-## this, new, & super
+## this, new, and super
 
 ___this___ &rarr; accesses the current object
 `this.hp -= 10;`
@@ -514,7 +514,7 @@ class Child extends Parent {
 
 __Abstract Classes:__ 
   - Instances can't be created
-  - Can have abstract & concrete methods
+  - Can have abstract and concrete methods
   - Cannot be declared final (think about it)
   - Other classes can only extend at most __ONE__ abstract class
 
@@ -670,7 +670,7 @@ class Main {
 ### Inheritance
 
 Passing down fields and methods for other classes to use
-  - Extending classes & implementing interfaces
+  - Extending classes and implementing interfaces
 
 ```Java
 class Vehicle {
