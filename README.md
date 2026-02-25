@@ -1,5 +1,7 @@
 # Midterm 1 Snippets
 
+**Disclaimer:** These notes were copied from these wonderful [slides](https://docs.google.com/presentation/d/1QUFehTo8uTQZLbUBuO_WuoZ_PHYFviEtaXXUoniMYtk/edit?slide=id.p#slide=id.p) made by some (wonderful) past TAs.
+
 ## Table of Contents
 
 - [Fundamentals of Java](#fundamentals-of-java)
