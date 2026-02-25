@@ -1,3 +1,6 @@
+<details>
+  <summary>Midterm 1 Notes</summary>
+
 # Midterm 1 Snippets
 
 ## Table of Contents
@@ -1155,3 +1158,818 @@ public class StrategyPatternDemo {
     }
 }
 ```
+
+</details>
+
+<details>
+  <summary>Midterm 2 Notes</summary>
+
+  Ha! You thought you could get a jump start didn't you?!
+
+</details>
+
+<details>
+  <summary>Final Notes</summary>
+
+
+  Well that was a mistake :)
+
+  HashMop<Inheritance, Spaghetti> hm = new HashMop<>();
+
+  hm.put(0, Look,) <br>
+  hm.put(1, if) <br>
+  hm.put(2, you) <br>
+  hm.put(3, had) <br>
+  hm.put(4, one) <br>
+  hm.put(5, shot) <br>
+  hm.put(6, or) <br>
+  hm.get(4); <br>
+  hm.put(8, opportunity) <br>
+  hm.put(9, To) <br>
+  hm.put(10, seize) <br>
+  hm.put(11, everything) <br>
+  hm.get(2); <br>
+  hm.put(13, ever) <br>
+  hm.put(14, wanted) <br>
+  hm.put(15, in) <br>
+  hm.get(4); <br>
+  hm.put(17, moment) <br>
+  hm.put(18, Would) <br>
+  hm.get(2); <br>
+  hm.put(20, capture) <br>
+  hm.put(21, it) <br>
+  hm.get(6); <br>
+  hm.put(23, just) <br>
+  hm.put(24, let) <br>
+  hm.get(21); <br>
+  hm.put(26, slip?) <br>
+  hm.put(27, Yo) <br>
+  hm.put(28, His) <br>
+  hm.put(29, palms) <br>
+  hm.put(30, are) <br>
+  hm.put(31, sweaty,) <br>
+  hm.put(32, knees) <br>
+  hm.put(33, weak,) <br>
+  hm.put(34, arms) <br>
+  hm.get(30); <br>
+  hm.put(36, heavy) <br>
+  hm.put(37, There's) <br>
+  hm.put(38, vomit) <br>
+  hm.put(39, on) <br>
+  hm.put(40, his) <br>
+  hm.put(41, sweater) <br>
+  hm.put(42, already,) <br>
+  hm.put(43, mom's) <br>
+  hm.put(44, spaghetti) <br>
+  hm.put(45, He's) <br>
+  hm.put(46, nervous,) <br>
+  hm.put(47, but) <br>
+  hm.get(39); <br>
+  hm.put(49, the) <br>
+  hm.put(50, surface,) <br>
+  hm.put(51, he) <br>
+  hm.put(52, looks) <br>
+  hm.put(53, calm) <br>
+  hm.put(54, and) <br>
+  hm.put(55, ready) <br>
+  hm.get(9); <br>
+  hm.put(57, drop) <br>
+  hm.put(58, bombs,) <br>
+  hm.get(47); <br>
+  hm.get(51); <br>
+  hm.put(61, keeps) <br>
+  hm.get(39); <br>
+  hm.put(63, forgetting) <br>
+  hm.put(64, What) <br>
+  hm.get(51); <br>
+  hm.put(66, wrote) <br>
+  hm.put(67, down,) <br>
+  hm.get(49); <br>
+  hm.put(69, whole) <br>
+  hm.put(70, crowd) <br>
+  hm.put(71, goes) <br>
+  hm.put(72, so) <br>
+  hm.put(73, loud) <br>
+  hm.put(74, He) <br>
+  hm.put(75, opens) <br>
+  hm.get(40); <br>
+  hm.put(77, mouth,) <br>
+  hm.get(47); <br>
+  hm.get(49); <br>
+  hm.put(80, words) <br>
+  hm.put(81, won't) <br>
+  hm.put(82, come) <br>
+  hm.put(83, out) <br>
+  hm.get(45); <br>
+  hm.put(85, chokin',) <br>
+  hm.put(86, how?) <br>
+  hm.put(87, Everybody's) <br>
+  hm.put(88, jokin') <br>
+  hm.put(89, now) <br>
+  hm.put(90, The) <br>
+  hm.put(91, clock's) <br>
+  hm.put(92, run) <br>
+  hm.put(93, out,) <br>
+  hm.put(94, time's) <br>
+  hm.put(95, up,) <br>
+  hm.put(96, over,) <br>
+  hm.put(97, blaow) <br>
+  hm.put(98, Snap) <br>
+  hm.put(99, back) <br>
+  hm.put(100, to) <br>
+  hm.put(101, reality,) <br>
+  hm.put(102, ope,) <br>
+  hm.put(103, there) <br>
+  hm.get(71); <br>
+  hm.put(105, gravity) <br>
+  hm.put(106, Ope,) <br>
+  hm.get(103); <br>
+  hm.get(71); <br>
+  hm.put(109, Rabbit,) <br>
+  hm.get(51); <br>
+  hm.put(111, choked,) <br>
+  hm.put(112, he's) <br>
+  hm.get(72); <br>
+  hm.put(114, mad) <br>
+  hm.put(115, But) <br>
+  hm.get(51); <br>
+  hm.get(81); <br>
+  hm.put(118, give) <br>
+  hm.put(119, up) <br>
+  hm.put(120, that) <br>
+  hm.put(121, easy,) <br>
+  hm.put(122, no,) <br>
+  hm.get(51); <br>
+  hm.get(81); <br>
+  hm.put(125, have) <br>
+  hm.get(21); <br>
+  hm.get(74); <br>
+  hm.put(128, knows) <br>
+  hm.get(40); <br>
+  hm.get(69); <br>
+  hm.put(131, back's) <br>
+  hm.get(100); <br>
+  hm.put(133, these) <br>
+  hm.put(134, ropes,) <br>
+  hm.get(21); <br>
+  hm.put(136, don't) <br>
+  hm.put(137, matter) <br>
+  hm.get(45); <br>
+  hm.put(139, dope,) <br>
+  hm.get(51); <br>
+  hm.get(128); <br>
+  hm.put(142, that,) <br>
+  hm.get(47); <br>
+  hm.get(112); <br>
+  hm.put(145, broke,) <br>
+  hm.get(112); <br>
+  hm.get(72); <br>
+  hm.put(148, stagnant) <br>
+  hm.get(74); <br>
+  hm.get(128); <br>
+  hm.put(151, when) <br>
+  hm.get(51); <br>
+  hm.get(71); <br>
+  hm.get(99); <br>
+  hm.get(100); <br>
+  hm.put(156, this) <br>
+  hm.put(157, mobile) <br>
+  hm.put(158, home,) <br>
+  hm.put(159, that's) <br>
+  hm.get(151); <br>
+  hm.put(161, it's) <br>
+  hm.put(162, Back) <br>
+  hm.get(100); <br>
+  hm.get(49); <br>
+  hm.put(165, lab) <br>
+  hm.put(166, again,) <br>
+  hm.put(167, yo,) <br>
+  hm.get(156); <br>
+  hm.put(169, old) <br>
+  hm.put(170, rhapsody) <br>
+  hm.put(171, Better) <br>
+  hm.put(172, go) <br>
+  hm.get(20); <br>
+  hm.get(156); <br>
+  hm.get(17); <br>
+  hm.get(54); <br>
+  hm.put(177, hope) <br>
+  hm.get(21); <br>
+  hm.get(136); <br>
+  hm.put(180, pass) <br>
+  hm.put(181, him) <br>
+  hm.put(182, You) <br>
+  hm.put(183, better) <br>
+  hm.put(184, lose) <br>
+  hm.put(185, yourself) <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.put(188, music) <br>
+  hm.get(90); <br>
+  hm.put(190, moment,) <br>
+  hm.get(2); <br>
+  hm.put(192, own) <br>
+  hm.put(193, it,) <br>
+  hm.get(2); <br>
+  hm.get(183); <br>
+  hm.put(196, never) <br>
+  hm.get(24); <br>
+  hm.get(21); <br>
+  hm.get(172); <br>
+  hm.put(200, (Go)) <br>
+  hm.get(182); <br>
+  hm.put(202, only) <br>
+  hm.put(203, get) <br>
+  hm.get(4); <br>
+  hm.put(205, shot,) <br>
+  hm.put(206, do) <br>
+  hm.put(207, not) <br>
+  hm.put(208, miss) <br>
+  hm.put(209, your) <br>
+  hm.put(210, chance) <br>
+  hm.get(100); <br>
+  hm.put(212, blow) <br>
+  hm.put(213, This) <br>
+  hm.get(8); <br>
+  hm.put(215, comes) <br>
+  hm.put(216, once) <br>
+  hm.get(15); <br>
+  hm.put(218, a) <br>
+  hm.put(219, lifetime,) <br>
+  hm.put(220, yo) <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(184); <br>
+  hm.get(185); <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.get(188); <br>
+  hm.get(90); <br>
+  hm.get(190); <br>
+  hm.get(2); <br>
+  hm.get(192); <br>
+  hm.get(193); <br>
+  hm.get(2); <br>
+  hm.get(183); <br>
+  hm.get(196); <br>
+  hm.get(24); <br>
+  hm.get(21); <br>
+  hm.get(172); <br>
+  hm.get(200); <br>
+  hm.get(182); <br>
+  hm.get(202); <br>
+  hm.get(203); <br>
+  hm.get(4); <br>
+  hm.get(205); <br>
+  hm.get(206); <br>
+  hm.get(207); <br>
+  hm.get(208); <br>
+  hm.get(209); <br>
+  hm.get(210); <br>
+  hm.get(100); <br>
+  hm.get(212); <br>
+  hm.get(213); <br>
+  hm.get(8); <br>
+  hm.get(215); <br>
+  hm.get(216); <br>
+  hm.get(15); <br>
+  hm.get(218); <br>
+  hm.get(219); <br>
+  hm.get(220); <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(28); <br>
+  hm.put(263, soul's) <br>
+  hm.put(264, escaping) <br>
+  hm.put(265, through) <br>
+  hm.get(156); <br>
+  hm.put(267, hole) <br>
+  hm.get(120); <br>
+  hm.put(269, is) <br>
+  hm.put(270, gaping) <br>
+  hm.get(213); <br>
+  hm.put(272, world) <br>
+  hm.get(269); <br>
+  hm.put(274, mine) <br>
+  hm.put(275, for) <br>
+  hm.get(49); <br>
+  hm.put(277, taking,) <br>
+  hm.put(278, make) <br>
+  hm.put(279, me) <br>
+  hm.put(280, king) <br>
+  hm.put(281, As) <br>
+  hm.put(282, we) <br>
+  hm.put(283, move) <br>
+  hm.put(284, toward) <br>
+  hm.get(218); <br>
+  hm.put(286, new) <br>
+  hm.get(272); <br>
+  hm.put(288, order) <br>
+  hm.put(289, A) <br>
+  hm.put(290, normal) <br>
+  hm.put(291, life) <br>
+  hm.get(269); <br>
+  hm.put(293, boring,) <br>
+  hm.get(47); <br>
+  hm.put(295, superstardom's) <br>
+  hm.put(296, Close) <br>
+  hm.get(100); <br>
+  hm.put(298, post-mortem,) <br>
+  hm.get(21); <br>
+  hm.get(202); <br>
+  hm.put(301, grows) <br>
+  hm.put(302, harder) <br>
+  hm.put(303, Homie) <br>
+  hm.get(301); <br>
+  hm.put(305, hotter,) <br>
+  hm.get(51); <br>
+  hm.put(307, blows,) <br>
+  hm.get(161); <br>
+  hm.put(309, all) <br>
+  hm.put(310, over) <br>
+  hm.put(311, These) <br>
+  hm.put(312, hoes) <br>
+  hm.get(269); <br>
+  hm.get(309); <br>
+  hm.get(39); <br>
+  hm.put(316, him,) <br>
+  hm.put(317, coast-to-coast) <br>
+  hm.put(318, shows) <br>
+  hm.get(45); <br>
+  hm.put(320, known) <br>
+  hm.put(321, as) <br>
+  hm.get(49); <br>
+  hm.put(323, Globetrotter,) <br>
+  hm.put(324, lonely) <br>
+  hm.put(325, roads) <br>
+  hm.put(326, God) <br>
+  hm.get(202); <br>
+  hm.get(128); <br>
+  hm.get(112); <br>
+  hm.put(330, grown) <br>
+  hm.put(331, farther) <br>
+  hm.put(332, from) <br>
+  hm.get(158); <br>
+  hm.get(112); <br>
+  hm.put(335, no) <br>
+  hm.put(336, father) <br>
+  hm.get(74); <br>
+  hm.get(71); <br>
+  hm.put(339, home) <br>
+  hm.get(54); <br>
+  hm.put(341, barely) <br>
+  hm.get(128); <br>
+  hm.get(40); <br>
+  hm.get(192); <br>
+  hm.put(345, daughter) <br>
+  hm.get(115); <br>
+  hm.put(347, hold) <br>
+  hm.get(209); <br>
+  hm.put(349, nose) <br>
+  hm.put(350, 'cause) <br>
+  hm.put(351, here) <br>
+  hm.get(71); <br>
+  hm.get(49); <br>
+  hm.put(354, cold) <br>
+  hm.put(355, water) <br>
+  hm.get(311); <br>
+  hm.get(312); <br>
+  hm.get(136); <br>
+  hm.put(359, want) <br>
+  hm.get(181); <br>
+  hm.get(335); <br>
+  hm.put(362, mo',) <br>
+  hm.get(112); <br>
+  hm.get(354); <br>
+  hm.put(365, product) <br>
+  hm.put(366, They) <br>
+  hm.put(367, moved) <br>
+  hm.get(39); <br>
+  hm.get(100); <br>
+  hm.get(49); <br>
+  hm.put(371, next) <br>
+  hm.put(372, schmoe) <br>
+  hm.put(373, who) <br>
+  hm.put(374, flows) <br>
+  hm.get(74); <br>
+  hm.put(376, nose-dove) <br>
+  hm.get(54); <br>
+  hm.put(378, sold) <br>
+  hm.put(379, nada,) <br>
+  hm.get(54); <br>
+  hm.get(72); <br>
+  hm.get(49); <br>
+  hm.put(383, soap) <br>
+  hm.put(384, opera) <br>
+  hm.put(385, Is) <br>
+  hm.put(386, told,) <br>
+  hm.get(21); <br>
+  hm.put(388, unfolds,) <br>
+  hm.put(389, I) <br>
+  hm.put(390, suppose) <br>
+  hm.get(161); <br>
+  hm.put(392, old,) <br>
+  hm.put(393, partner) <br>
+  hm.get(115); <br>
+  hm.get(49); <br>
+  hm.put(396, beat) <br>
+  hm.get(71); <br>
+  hm.put(398, on,) <br>
+  hm.put(399, da-da-dom,) <br>
+  hm.put(400, da-dom,) <br>
+  hm.put(401, dah-dah-dah-dah) <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(184); <br>
+  hm.get(185); <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.get(188); <br>
+  hm.get(90); <br>
+  hm.get(190); <br>
+  hm.get(2); <br>
+  hm.get(192); <br>
+  hm.get(193); <br>
+  hm.get(2); <br>
+  hm.get(183); <br>
+  hm.get(196); <br>
+  hm.get(24); <br>
+  hm.get(21); <br>
+  hm.get(172); <br>
+  hm.get(200); <br>
+  hm.get(182); <br>
+  hm.get(202); <br>
+  hm.get(203); <br>
+  hm.get(4); <br>
+  hm.get(205); <br>
+  hm.get(206); <br>
+  hm.get(207); <br>
+  hm.get(208); <br>
+  hm.get(209); <br>
+  hm.get(210); <br>
+  hm.get(100); <br>
+  hm.get(212); <br>
+  hm.get(213); <br>
+  hm.get(8); <br>
+  hm.get(215); <br>
+  hm.get(216); <br>
+  hm.get(15); <br>
+  hm.get(218); <br>
+  hm.get(219); <br>
+  hm.get(220); <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(184); <br>
+  hm.get(185); <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.get(188); <br>
+  hm.get(90); <br>
+  hm.get(190); <br>
+  hm.get(2); <br>
+  hm.get(192); <br>
+  hm.get(193); <br>
+  hm.get(2); <br>
+  hm.get(183); <br>
+  hm.get(196); <br>
+  hm.get(24); <br>
+  hm.get(21); <br>
+  hm.get(172); <br>
+  hm.get(200); <br>
+  hm.get(182); <br>
+  hm.get(202); <br>
+  hm.get(203); <br>
+  hm.get(4); <br>
+  hm.get(205); <br>
+  hm.get(206); <br>
+  hm.get(207); <br>
+  hm.get(208); <br>
+  hm.get(209); <br>
+  hm.get(210); <br>
+  hm.get(100); <br>
+  hm.get(212); <br>
+  hm.get(213); <br>
+  hm.get(8); <br>
+  hm.get(215); <br>
+  hm.get(216); <br>
+  hm.get(15); <br>
+  hm.get(218); <br>
+  hm.get(219); <br>
+  hm.get(220); <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.put(482, No) <br>
+  hm.put(483, more) <br>
+  hm.put(484, games,) <br>
+  hm.put(485, I'ma) <br>
+  hm.put(486, change) <br>
+  hm.put(487, what) <br>
+  hm.get(2); <br>
+  hm.put(489, call) <br>
+  hm.put(490, rage) <br>
+  hm.put(491, Tear) <br>
+  hm.get(156); <br>
+  hm.put(493, motherfuckin') <br>
+  hm.put(494, roof) <br>
+  hm.put(495, off) <br>
+  hm.put(496, like) <br>
+  hm.put(497, two) <br>
+  hm.put(498, dogs) <br>
+  hm.put(499, caged) <br>
+  hm.get(389); <br>
+  hm.put(501, was) <br>
+  hm.put(502, playin') <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.put(505, beginning,) <br>
+  hm.get(49); <br>
+  hm.put(507, mood) <br>
+  hm.get(309); <br>
+  hm.put(509, changed) <br>
+  hm.put(510, I've) <br>
+  hm.put(511, been) <br>
+  hm.put(512, chewed) <br>
+  hm.get(119); <br>
+  hm.get(54); <br>
+  hm.put(515, spit) <br>
+  hm.get(83); <br>
+  hm.get(54); <br>
+  hm.put(518, booed) <br>
+  hm.get(495); <br>
+  hm.put(520, stage) <br>
+  hm.get(115); <br>
+  hm.get(389); <br>
+  hm.put(523, kept) <br>
+  hm.put(524, rhymin') <br>
+  hm.get(54); <br>
+  hm.put(526, stepped) <br>
+  hm.put(527, right) <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.get(371); <br>
+  hm.put(531, cypher) <br>
+  hm.put(532, Best) <br>
+  hm.put(533, believe) <br>
+  hm.put(534, somebody's) <br>
+  hm.put(535, payin') <br>
+  hm.get(49); <br>
+  hm.put(537, Pied) <br>
+  hm.put(538, Piper) <br>
+  hm.put(539, All) <br>
+  hm.get(49); <br>
+  hm.put(541, pain) <br>
+  hm.put(542, inside) <br>
+  hm.put(543, amplified) <br>
+  hm.put(544, by) <br>
+  hm.get(49); <br>
+  hm.put(546, Fact) <br>
+  hm.get(120); <br>
+  hm.get(389); <br>
+  hm.put(549, can't) <br>
+  hm.get(203); <br>
+  hm.get(544); <br>
+  hm.put(552, with) <br>
+  hm.put(553, my) <br>
+  hm.put(554, nine-to-) <br>
+  hm.put(555, Five) <br>
+  hm.get(54); <br>
+  hm.get(389); <br>
+  hm.get(549); <br>
+  hm.put(559, provide) <br>
+  hm.get(49); <br>
+  hm.get(527); <br>
+  hm.put(562, type) <br>
+  hm.put(563, of) <br>
+  hm.get(291); <br>
+  hm.get(275); <br>
+  hm.get(553); <br>
+  hm.put(567, family) <br>
+  hm.put(568, 'Cause,) <br>
+  hm.put(569, man,) <br>
+  hm.get(133); <br>
+  hm.put(571, goddamn) <br>
+  hm.put(572, food) <br>
+  hm.put(573, stamps) <br>
+  hm.get(136); <br>
+  hm.put(575, buy) <br>
+  hm.put(576, diapers) <br>
+  hm.put(577, And) <br>
+  hm.put(578, there's) <br>
+  hm.get(335); <br>
+  hm.put(580, movie,) <br>
+  hm.get(578); <br>
+  hm.get(335); <br>
+  hm.put(583, Mekhi) <br>
+  hm.put(584, Phifer,) <br>
+  hm.get(156); <br>
+  hm.get(269); <br>
+  hm.get(553); <br>
+  hm.get(291); <br>
+  hm.get(577); <br>
+  hm.get(133); <br>
+  hm.put(591, times) <br>
+  hm.get(30); <br>
+  hm.get(72); <br>
+  hm.put(594, hard,) <br>
+  hm.get(54); <br>
+  hm.get(161); <br>
+  hm.put(597, gettin') <br>
+  hm.put(598, even) <br>
+  hm.get(302); <br>
+  hm.put(600, Tryna) <br>
+  hm.put(601, feed) <br>
+  hm.get(54); <br>
+  hm.get(355); <br>
+  hm.get(553); <br>
+  hm.put(605, seed,) <br>
+  hm.put(606, plus) <br>
+  hm.put(607, teeter-totter) <br>
+  hm.put(608, Caught) <br>
+  hm.get(119); <br>
+  hm.put(610, between) <br>
+  hm.put(611, bein') <br>
+  hm.get(218); <br>
+  hm.get(336); <br>
+  hm.get(54); <br>
+  hm.get(218); <br>
+  hm.put(616, prima) <br>
+  hm.put(617, donna) <br>
+  hm.put(618, Baby-mama) <br>
+  hm.put(619, drama,) <br>
+  hm.put(620, screamin') <br>
+  hm.get(39); <br>
+  hm.put(622, her,) <br>
+  hm.put(623, too) <br>
+  hm.put(624, much) <br>
+  hm.get(275); <br>
+  hm.get(279); <br>
+  hm.get(100); <br>
+  hm.put(628, wanna) <br>
+  hm.put(629, Stay) <br>
+  hm.get(15); <br>
+  hm.get(4); <br>
+  hm.put(632, spot,) <br>
+  hm.put(633, another) <br>
+  hm.put(634, day) <br>
+  hm.get(563); <br>
+  hm.put(636, monotony's) <br>
+  hm.put(637, gotten) <br>
+  hm.get(279); <br>
+  hm.get(9); <br>
+  hm.get(49); <br>
+  hm.put(641, point) <br>
+  hm.put(642, I'm) <br>
+  hm.get(496); <br>
+  hm.get(218); <br>
+  hm.put(645, snail,) <br>
+  hm.get(510); <br>
+  hm.put(647, got) <br>
+  hm.get(9); <br>
+  hm.put(649, formulate) <br>
+  hm.get(218); <br>
+  hm.put(651, plot) <br>
+  hm.get(6); <br>
+  hm.put(653, end) <br>
+  hm.get(119); <br>
+  hm.get(15); <br>
+  hm.put(656, jail) <br>
+  hm.get(6); <br>
+  hm.get(5); <br>
+  hm.put(659, Success) <br>
+  hm.get(269); <br>
+  hm.get(553); <br>
+  hm.get(202); <br>
+  hm.get(493); <br>
+  hm.put(664, option,) <br>
+  hm.put(665, failure's) <br>
+  hm.get(207); <br>
+  hm.put(667, Mom,) <br>
+  hm.get(389); <br>
+  hm.put(669, love) <br>
+  hm.put(670, you,) <br>
+  hm.get(47); <br>
+  hm.get(156); <br>
+  hm.put(673, trailer's) <br>
+  hm.get(647); <br>
+  hm.get(9); <br>
+  hm.put(676, go,) <br>
+  hm.get(389); <br>
+  hm.put(678, cannot) <br>
+  hm.put(679, grow) <br>
+  hm.get(169); <br>
+  hm.get(15); <br>
+  hm.put(682, Salem's) <br>
+  hm.put(683, Lot) <br>
+  hm.put(684, So) <br>
+  hm.get(351); <br>
+  hm.get(389); <br>
+  hm.get(676); <br>
+  hm.get(161); <br>
+  hm.get(553); <br>
+  hm.get(205); <br>
+  hm.put(691, feet,) <br>
+  hm.put(692, fail) <br>
+  hm.get(279); <br>
+  hm.get(207); <br>
+  hm.get(213); <br>
+  hm.put(696, may) <br>
+  hm.put(697, be) <br>
+  hm.get(49); <br>
+  hm.get(202); <br>
+  hm.get(8); <br>
+  hm.get(120); <br>
+  hm.get(389); <br>
+  hm.get(647); <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(184); <br>
+  hm.get(185); <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.get(188); <br>
+  hm.get(90); <br>
+  hm.get(190); <br>
+  hm.get(2); <br>
+  hm.get(192); <br>
+  hm.get(193); <br>
+  hm.get(2); <br>
+  hm.get(183); <br>
+  hm.get(196); <br>
+  hm.get(24); <br>
+  hm.get(21); <br>
+  hm.get(172); <br>
+  hm.get(200); <br>
+  hm.get(182); <br>
+  hm.get(202); <br>
+  hm.get(203); <br>
+  hm.get(4); <br>
+  hm.get(205); <br>
+  hm.get(206); <br>
+  hm.get(207); <br>
+  hm.get(208); <br>
+  hm.get(209); <br>
+  hm.get(210); <br>
+  hm.get(100); <br>
+  hm.get(212); <br>
+  hm.get(213); <br>
+  hm.get(8); <br>
+  hm.get(215); <br>
+  hm.get(216); <br>
+  hm.get(15); <br>
+  hm.get(218); <br>
+  hm.get(219); <br>
+  hm.get(220); <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(184); <br>
+  hm.get(185); <br>
+  hm.get(15); <br>
+  hm.get(49); <br>
+  hm.get(188); <br>
+  hm.get(90); <br>
+  hm.get(190); <br>
+  hm.get(2); <br>
+  hm.get(192); <br>
+  hm.get(193); <br>
+  hm.get(2); <br>
+  hm.get(183); <br>
+  hm.get(196); <br>
+  hm.get(24); <br>
+  hm.get(21); <br>
+  hm.get(172); <br>
+  hm.get(200); <br>
+  hm.get(182); <br>
+  hm.get(202); <br>
+  hm.get(203); <br>
+  hm.get(4); <br>
+  hm.get(205); <br>
+  hm.get(206); <br>
+  hm.get(207); <br>
+  hm.get(208); <br>
+  hm.get(209); <br>
+  hm.get(210); <br>
+  hm.get(100); <br>
+  hm.get(212); <br>
+  hm.get(213); <br>
+  hm.get(8); <br>
+  hm.get(215); <br>
+  hm.get(216); <br>
+  hm.get(15); <br>
+  hm.get(218); <br>
+  hm.get(219); <br>
+  hm.get(220); <br>
+  hm.get(182); <br>
+  hm.get(183); <br>
+  hm.get(182); <br>
+  hm.put(785, can) <br>
+  hm.get(206); <br>
+  hm.put(787, anything) <br>
+  hm.get(2); <br>
+  hm.put(789, set) <br>
+  hm.get(209); <br>
+  hm.put(791, mind) <br>
+  hm.put(792, to,) <br>
+  hm.put(793, man) <br>
+
+
+</details>
