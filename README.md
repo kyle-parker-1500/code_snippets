@@ -1,6 +1,3 @@
-<details>
-  <summary>Midterm 1 Snippets and Notes</summary>
-
 # Midterm 1 Snippets
 
 ## Table of Contents
@@ -17,9 +14,9 @@
   9. [Abstract vs Interface](#abstract-vs-interface)
   10. [Extend vs Implement](#extend-vs-implement)
   11. [Override vs Overload](#override-vs-overload)
-  12. [Testing: White Box vs Black Box](#testing-black-box-vs-white-box)
+  12. [Testing: White Box vs Black Box](#black-box-vs-white-box)
 - [Comparing Objects](#comparing-objects)
-- [Four Pillars of OOP](#four-pillars-of-oop-pie-a)
+- [Four Pillars of OOP](#four-pillars-of-oop)
   1. [Abstraction](#abstraction)
   2. [Inheritance](#inheritance)
   3. [Encapsulation](#encapsulation)
@@ -29,16 +26,12 @@
   2. [Command](#command)
   3. [Strategy](#strategy)
 
-<details>
-  <summary>Fundamentals of Java</summary>
-
-
 ## Fundamentals of Java
 
 If statements:
 
 ```Java
-int a = 5; 
+int a = 5;
 int b = 10;
 if (a > b) {
   System.out.println(a + " is greater than " + b);
@@ -136,7 +129,7 @@ switch (userInput) {
 
 Try Catch:
 
-*“They’re like backwards if statements” ~ Dr. C*
+_“They’re like backwards if statements” ~ Dr. C_
 
 - Use when we're not certain something will run the same 100% of the time
 - Ex:
@@ -147,7 +140,7 @@ Try Catch:
   the catch block
 - Java can look for many types of errors ex: `IOException` and `Exception`
   (most common)
-- Finally will ___always___ run regardless of what happens in the try catch
+- Finally will **_always_** run regardless of what happens in the try catch
   - Good for closing things like scanners or files
 
 Syntax:
@@ -159,7 +152,7 @@ Scanner scan;
 try {
   String line = "";
   scan = new Scanner(System.in); // place problematic code within try catch
-  
+
   line = scan.nextLine();
   System.out.println(line);
 } catch (Exception e) {
@@ -190,14 +183,14 @@ try (Scanner scan = new Scanner(file)) {
 }
 ```
 
-## Git and GitHub:
+## Git and GitHub
 
 Git:
 
 - An extremely useful version control system
 - Allows you to save the state of your files in a particular moment
-  - Save the version in something called a *repository*
-    - Save a state through something called a *commit*
+  - Save the version in something called a _repository_
+    - Save a state through something called a _commit_
   - This gives you the power to go back to a previous version if you make a mistake
   - It also allows you to go back to a previous version to test something
   - You can also make a new copy in the form of a branch to change something
@@ -209,35 +202,34 @@ GitHub:
 
 All Git and GitHub commands and what they do:
 
-| Command | What it does:|
-| -------------- | --------------- |
-| git status     | shows current state of branch |
-| git add . | stages all changes for a commit |
-| git add /filepath/ | stages one specific path for a commit |
-| git commit -m "" | commits currently staged files with a given message |
-| git commit | opens up a VIM style terminal to write longer and more complex messages |
-| git stash | must use after `git add`, takes all currently staged files and hides them from a commit or switch |
-| git stash /filepath/  | stashes a specific filepath |
-| git stash pop | unstash the last thing that was stashed |
-| git log  | list all commits |
-| git show | display last commit |
-| git show <commit_hash> | each commit has a hash to identify it, you can use this command to see it |
-| git checkout <branch_name> | moves you to a new branch |
-| git switch <branch_name> | does the same thing as git checkout <branch_name> |
-| git checkout -b <new_branch_name> | creates new branch |
-| git remote -v | displays all remote repositories currently connected |
-| git remote add origin <github_link.git> | add new remote repository under the name origin |
-| git remote remove <name> | remove remote repository link at that name |
-| git merge <branch_name> | merges <branch_name> into checked out branch |
-| git rebase <branch_name> | takes commits from <branch_name> and places them on top of all commits of checked out branch |
+| Command                                 | What it does:                                                                                     |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| git status                              | shows current state of branch                                                                     |
+| git add .                               | stages all changes for a commit                                                                   |
+| git add /filepath/                      | stages one specific path for a commit                                                             |
+| git commit -m ""                        | commits currently staged files with a given message                                               |
+| git commit                              | opens up a VIM style terminal to write longer and more complex messages                           |
+| git stash                               | must use after `git add`, takes all currently staged files and hides them from a commit or switch |
+| git stash /filepath/                    | stashes a specific filepath                                                                       |
+| git stash pop                           | unstash the last thing that was stashed                                                           |
+| git log                                 | list all commits                                                                                  |
+| git show                                | display last commit                                                                               |
+| git show <commit_hash>                  | each commit has a hash to identify it, you can use this command to see it                         |
+| git checkout <branch_name>              | moves you to a new branch                                                                         |
+| git switch <branch_name>                | does the same thing as git checkout <branch_name>                                                 |
+| git checkout -b <new_branch_name>       | creates new branch                                                                                |
+| git remote -v                           | displays all remote repositories currently connected                                              |
+| git remote add origin <github_link.git> | add new remote repository under the name origin                                                   |
+| git remote remove <name>                | remove remote repository link at that name                                                        |
+| git merge <branch_name>                 | merges <branch_name> into checked out branch                                                      |
+| git rebase <branch_name>                | takes commits from <branch_name> and places them on top of all commits of checked out branch      |
 
-
-## Constructors:
+## Constructors
 
 Used to initialize objects also used to set values.
 
-__Default:__ When no constructor is created, a default constructor is called when instantiating an object
-__Parameterized:__ If a constructor is created it will override the default and is custom to the programmer
+**Default:** When no constructor is created, a default constructor is called when instantiating an object
+**Parameterized:** If a constructor is created it will override the default and is custom to the programmer
 
 ```Java
 Card card = new Card();
@@ -264,67 +256,61 @@ public Monster(string type, int strength, int health) {
 
 ## Access Modifiers and UML
 
-|  | Class | Package | Subclass | Global |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| Public | Yes | Yes | Yes | Yes |
-| Protected | Yes | Yes | Yes | No |
-| Default | Yes | Yes | No | No |
-| Private | Yes | No | No | No |
-
+|           | Class | Package | Subclass | Global |
+| --------- | ----- | ------- | -------- | ------ |
+| Public    | Yes   | Yes     | Yes      | Yes    |
+| Protected | Yes   | Yes     | Yes      | No     |
+| Default   | Yes   | Yes     | No       | No     |
+| Private   | Yes   | No      | No       | No     |
 
 _Remember!_ Package-private and default mean the same thing since variables and methods are set as package-private if not access modifier is specified!
 
 ### UML
+
 _Remember!_ UML Access Modifier symbols in UML are based on location!
 
 - Abstract (Pool ball symbol): ![Abstract](./images/abstract.png)
 
-
 - Final (top left symbol): ![Final](./images/final.png)
-
 
 - Static (bottom left and/or underlined): ![Static](./images/static.png)
 
-
 - Public (open lock or +): ![Public](./images/public.png)
-
 
 - Private (closed lock or -): ![Private](./images/private.png)
 
-
 - Protected (key or #): ![Protected](./images/protected.png)
-
 
 - Default/Package Private (circle or ~): ![Default](./images/default.png)
 
-
 - Extends (solid arrow): ![Extends](./images/extends.png)
 
-
 - Implements (dashed arrow): ![Implements](./images/implements.png)
-
 
 - Direction arrow points: Can provide all the methods of the class the arrow is pointing at.
 
 ## Primitives and Wrappers
 
-__Primitive Types:__ int, double, char...
-  - Simple types
+**Primitive Types:** int, double, char...
 
-__Wrapper Classes:__ Integer, Double, Character...
-  - Objects containing methods to use such as .equals()
+- Simple types
+
+**Wrapper Classes:** Integer, Double, Character...
+
+- Objects containing methods to use such as .equals()
 
 ![Wrappers](./images/wrapper_class.png)
 
 ## Boxing and Unboxing
-__Boxing:__ Converting a primitive type &rarr; wrapper class
+
+**Boxing:** Converting a primitive type &rarr; wrapper class
 
 ```Java
 int primitive = 50;
 Integer wrapper = primitive;
 ```
 
-__Unboxing:__ Converting a wrapper class &rarr; primitive type
+**Unboxing:** Converting a wrapper class &rarr; primitive type
 
 ```Java
 Integer wrapper = 50;
@@ -333,7 +319,8 @@ int primitive = wrapper;
 
 ## ArrayList vs HashMap
 
-### ArrayList:
+### ArrayList
+
 ArrayList &rarr; A list of single data types
 Declaration:
 `ArrayList<Reference_Type> name = new ArrayList<>();`
@@ -366,9 +353,10 @@ for (String s : arr) {
 }
 ```
 
-### HashMap:
+### HashMap
 
 HashMap = A list of key and value pairs
+
 ```Java
 HashMap<Integer, String> hm = new HashMap<>();
 
@@ -420,35 +408,41 @@ for (String value : hm.values()) {
 
 ### Instance vs Static vs Final
 
-__Instance:__ `Card c = new Card();`
-  - When you use the keyword "__new__", you create an instance of the object
-  - They can be marked as final
-  - They can't be marked abstract
-  - They can't be marked static
+**Instance:** `Card c = new Card();`
 
-__Static:__ `public static void m();`
-  - Can be applied to: methods and fields
-  - Static members can be accessed without creating an instance of the object
+- When you use the keyword "**new**", you create an instance of the object
+- They can be marked as final
+- They can't be marked abstract
+- They can't be marked static
 
-__Static Variables:__ `public static int num;`
-  - Variable is shared by all instances of a class
+**Static:** `public static void m();`
 
-__Final:__ `public final void m();`
-  - Can be applied to: classes, methods, and fields
-  - Makes things constant and prevents overriding
+- Can be applied to: methods and fields
+- Static members can be accessed without creating an instance of the object
 
-__Final Variables:__ `public final SIZE = 5;`
+**Static Variables:** `public static int num;`
+
+- Variable is shared by all instances of a class
+
+**Final:** `public final void m();`
+
+- Can be applied to: classes, methods, and fields
+- Makes things constant and prevents overriding
+
+**Final Variables:** `public final SIZE = 5;`
+
 - Variables can only ever be assigned once and the value can never be changed
   - Variables marked with ALL_CAPS are typically final variables
 
-## this, new, and super
+## this new and super
 
-___this___ &rarr; accesses the current object
+**_this_** &rarr; accesses the current object
 `this.hp -= 10;`
 
-___`this("parent", "child");`___ calls its own constructor within the given parameter
+**_`this("parent", "child");`_** calls its own constructor within the given parameter
 
 Example:
+
 ```Java
 public class Parent {
   private String parentString;
@@ -473,10 +467,11 @@ class Child extends Parent {
 }
 ```
 
-___new___ &rarr; creates a new instance of an object
+**_new_** &rarr; creates a new instance of an object
 `Object obj = new Object(param);`
 
-___super___ &rarr; accesses the parent object (the class that the current class is extending)
+**_super_** &rarr; accesses the parent object (the class that the current class is extending)
+
 ```Java
 ChildObject { // constructor
   super();
@@ -484,9 +479,10 @@ ChildObject { // constructor
 }
 ```
 
-___`super(s1);`___ &rarr; calls the constructor in its parent class
+**_`super(s1);`_** &rarr; calls the constructor in its parent class
 
 Example:
+
 ```Java
 public class Parent {
   private String parentString;
@@ -512,28 +508,32 @@ class Child extends Parent {
 
 ## Abstract vs Interface
 
-__Abstract Classes:__ 
-  - Instances can't be created
-  - Can have abstract and concrete methods
-  - Cannot be declared final (think about it)
-  - Other classes can only extend at most __ONE__ abstract class
+**Abstract Classes:**
 
-__Interface:__
-  - Blueprint/behavior of the class
-    - Specifies what a class must do and _not_ how
-  - Used to achieve loose coupling
-  - Other classes can implement __MANY__ interfaces
+- Instances can't be created
+- Can have abstract and concrete methods
+- Cannot be declared final (think about it)
+- Other classes can only extend at most **ONE** abstract class
+
+**Interface:**
+
+- Blueprint/behavior of the class
+  - Specifies what a class must do and _not_ how
+- Used to achieve loose coupling
+- Other classes can implement **MANY** interfaces
 
 ![Inheritance](./images/inheritance_1.png)
 
 Reading the above definitions which of the snippets is correct?
+
 ```Java
 A) Cat cat = new Animal();
 B) Animal animal = new Dog();
 C) Canine dog = new Canine();
 ```
 
-__Answer (click to reveal):__
+**Answer (click to reveal):**
+
   <details>
     <summary>Answer</summary>
 
@@ -543,21 +543,24 @@ __Answer (click to reveal):__
 
 ### Extend vs Implement
 
-__Extending:__
-  - When a class is inheriting from another class (abstract or not)
-  - When an interface is inheriting from another interface
+**Extending:**
+
+- When a class is inheriting from another class (abstract or not)
+- When an interface is inheriting from another interface
 
 `public interface Card extends Deck {}`
 
-__Implementing:__
-  - When a class is inheriting from an interface
+**Implementing:**
+
+- When a class is inheriting from an interface
 
 `public abstract class Monster implements Attack {}`
 
 ## Override vs Overload
 
-__Override:__
-  - Rewriting the code passed down from a parent class
+**Override:**
+
+- Rewriting the code passed down from a parent class
 
 Ex:
 
@@ -568,8 +571,9 @@ public String toString() {
 }
 ```
 
-__Overloading:__
-  - Making multiple variants of a method with the same name but different parameters
+**Overloading:**
+
+- Making multiple variants of a method with the same name but different parameters
 
 Ex:
 
@@ -587,15 +591,17 @@ double myMethod(double x, double y) {
 }
 ```
 
-## Testing: Black Box vs White Box
+## Black Box vs White Box
 
-__White Box Testing:__
+**White Box Testing:**
+
 - When the tester has access to the code being tested
   - Path Testing
   - Loop Testing
   - Condition Testing
 
-__Black Box Testing:__
+**Black Box Testing:**
+
 - When the tester doesn't have access to the code
   - Functional Testing
   - Non-functional Testing
@@ -603,16 +609,12 @@ __Black Box Testing:__
 
 ![Black Box vs White Box Testing](./images/blackbox_vs_whitebox.png)
 
-</details>
-
-<details>
-  <summary>Comparing Objects</summary>
-
 ## Comparing Objects
 
 ### Checking Object Type
 
-"__instanceof__" &rarr; a keyword for checking if a reference variable is containing a given type of object reference or not
+"**instanceof**" &rarr; a keyword for checking if a reference variable is containing a given type of object reference or not
+
 - returns a boolean (true/false)
 
 ```Java
@@ -623,13 +625,9 @@ for (Animal a : animals) {
 }
 ```
 
-</details>
+## Four Pillars of OOP
 
-<details>
-  <summary>Four Pillars of OOP</summary>
-
-
-## Four Pillars of OOP (PIE-A)
+Don't forget PIE-A!
 
 ### Abstraction
 
@@ -655,11 +653,12 @@ class Pig extends Animal {
   }
 }
 ```
+
 ```Java
 class Main {
   public static void main(String[] args) {
     Animal animal = new Animal(); // will create error:
-    // must inherit from another class to access the abstract class 
+    // must inherit from another class to access the abstract class
     Pig pig = new Pig();
     pig.animalSound(); // prints 'Sup boss
     pig.animalSound(); // prints Zzz
@@ -670,7 +669,8 @@ class Main {
 ### Inheritance
 
 Passing down fields and methods for other classes to use
-  - Extending classes and implementing interfaces
+
+- Extending classes and implementing interfaces
 
 ```Java
 class Vehicle {
@@ -680,6 +680,7 @@ class Vehicle {
   }
 }
 ```
+
 ```Java
 class Car extends Vehicle {
   private String model = "Mustang";
@@ -698,6 +699,7 @@ class Car extends Vehicle {
 ### Encapsulation
 
 Hiding explicit data from objects that don't need to know about that data
+
 - Storing specific data into classes
 
 ```Java
@@ -720,7 +722,7 @@ class Person {
 public class Main {
   public static void main(String[] args) {
     Person person = new Person();
-    person.name = "John"; // error, can't access directly 
+    person.name = "John"; // error, can't access directly
     System.out.println(person.name); // error; still can't access directly
     person.setName("Dr. C");
     System.out.println(person.getName()); // prints "Dr. C"
@@ -729,7 +731,9 @@ public class Main {
 ```
 
 ### Polymorphism
+
 Storing multiple objects into a single instance
+
 - Using a parent class as a container for the child class but not vice versa
 
 ```Java
@@ -765,9 +769,10 @@ class Main {
 }
 ```
 
-### Questions:
+### Questions
 
 Given the code: Which of the following are correct?
+
 ```Java
 class Monster{}
 
@@ -802,6 +807,7 @@ D) Dracula dracula = new Vampire();
 <br>
 
 Given the code: Which of the following are correct?
+
 ```Java
 class Animal{}
 
@@ -829,12 +835,6 @@ D) Cat cat = new Lion();
     D) `Cat cat = new Lion();`
 
   </details>
-
-
-</details>
-
-<details>
-  <summary>Design Patterns</summary>
 
 ## Design Patterns
 
@@ -888,11 +888,12 @@ y : 15
 z : 15
 */
 ```
+
 ![Singleton](./images/singleton.png)
 
 ```Java
 public class SingleObject {
-  // create object of SingleObject 
+  // create object of SingleObject
   private static SingleObject instance = new SingleObject();
 
   // make constructor private so class can't be instantiated
@@ -924,13 +925,14 @@ public class SingleObject {
 ### Command
 
 Encapsulates a request as an object
-  - Allows you to parameterize clients with different requests
-  - Stores actions or commands
-    - Copying commands into history list
-      - E.g.:
-      - Instant replay
-      - Undo/redo commands
-      - On/off commands
+
+- Allows you to parameterize clients with different requests
+- Stores actions or commands
+  - Copying commands into history list
+    - E.g.:
+    - Instant replay
+    - Undo/redo commands
+    - On/off commands
 
 ```Java
 Queue queue;
@@ -939,6 +941,7 @@ queue.add(Cara.do(surpriseAttack));
 queue.add(Mando.do(fightBack));
 queue.add(BabyYoda.do(sipTea));
 ```
+
 ```Java
 if (buttonPressed == button1) {
   lights.on();
@@ -958,7 +961,7 @@ class Light {
   }
 
   public void off() {
-    System.out.println("Light is off"); 
+    System.out.println("Light is off");
   }
 }
 
@@ -999,7 +1002,7 @@ class Stereo {
   public void setCD() {
     System.out.println("Stereo is set for CD input");
   }
-  
+
   public void setDVD() {
     System.out.println("Stereo is set for DVD input");
   }
@@ -1079,7 +1082,8 @@ class RemoteControlTest {
 ### Strategy
 
 Multiple variants of the same behavior
-  - Interchangable encapsulated behaviors
+
+- Interchangable encapsulated behaviors
 
 ```Java
 dog.setAction(new Howl());
@@ -1151,8 +1155,3 @@ public class StrategyPatternDemo {
     }
 }
 ```
-
-  </details>
-
-
-</details>
