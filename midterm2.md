@@ -270,28 +270,6 @@ What are 2 ways of testing equality?
 
 </details>
 
-## Tips for the Exam (And your notes!)
-
-**Exam:**
-
-- Read the prompt:
-  - Don't read too fast because you may glaze over important details of the question
-    - Good rule of thumb: Read the question 2 times before attempting to answer it
-- Use scratch paper!
-  - Bring some scratch paper (or even use open space on your notes) to help with coding problems
-    - Keeping track of variable values in your head gets hard sometimes
-- Take your time!
-  - Don't rush through the exam! It'll still be there in 30 minutes.
-- The other side of that is: Don't take too long on one question!
-  - If you're stuck on one problem for... let's say more than 10 minutes, move on
-  - Sometimes answering further questions will help you answer the other question
-  - Also varying the information that you're taking in will help your brain not become foggy
-- When you're done what should you do?
-  1. Submit immediately even if you're unsure of your answers for some questions.
-  2. Review your answers carefully making sure that your answers are the correct ones.
-  3. Call Dr. C over and ask him to click 'Submit' for you so that you don't have to deal with the burden of clicking 'Submit'.
-  - The answer was 2. Make sure, before submitting, that you review your answers. I like to mark answers that I'm unsure of using the bookmark feature of Canvas exams.
-
 ## JavaFX:
 
 Link to slides &rarr; [Slides](https://csumb.instructure.com/courses/31852/files/6939470?module_item_id=2142033) &rarr; By: Dr. C
@@ -466,7 +444,29 @@ hbox.getChildren().addAll(
   - Use lambdas (preferred) or anonymous inner classes
 - Gradle automates building & dependency management
 
-I didn't touch on everything the slides cover so make sure to go look through them!
+**I didn't touch on everything the slides cover so make sure to go look through them!**
+
+## Tips for the Exam (And your notes!)
+
+**Exam:**
+
+- Read the prompt:
+  - Don't read too fast because you may glaze over important details of the question
+    - Good rule of thumb: Read the question 2 times before attempting to answer it
+- Use scratch paper!
+  - Bring some scratch paper (or even use open space on your notes) to help with coding problems
+    - Keeping track of variable values in your head gets hard sometimes
+- Take your time!
+  - Don't rush through the exam! It'll still be there in 30 minutes.
+- The other side of that is: Don't take too long on one question!
+  - If you're stuck on one problem for... let's say more than 10 minutes, move on
+  - Sometimes answering further questions will help you answer the other question
+  - Also varying the information that you're taking in will help your brain not become foggy
+- When you're done what should you do?
+  1. Submit immediately even if you're unsure of your answers for some questions.
+  2. Review your answers carefully making sure that your answers are the correct ones.
+  3. Call Dr. C over and ask him to click 'Submit' for you so that you don't have to deal with the burden of clicking 'Submit'.
+  - The answer was 2. Make sure, before submitting, that you review your answers. I like to mark answers that I'm unsure of using the bookmark feature of Canvas exams.
 
 Notes:
 
