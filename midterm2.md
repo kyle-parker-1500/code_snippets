@@ -292,6 +292,182 @@ What are 2 ways of testing equality?
   3. Call Dr. C over and ask him to click 'Submit' for you so that you don't have to deal with the burden of clicking 'Submit'.
   - The answer was 2. Make sure, before submitting, that you review your answers. I like to mark answers that I'm unsure of using the bookmark feature of Canvas exams.
 
+## JavaFX:
+
+Link to slides &rarr; [Slides](https://csumb.instructure.com/courses/31852/files/6939470?module_item_id=2142033) &rarr; By: Dr. C
+
+### What is JavaFX?
+
+- Modern GUI toolkit for Java
+
+### Application Lifecycle
+
+```Java
+public class HelloWorldApp extends Application {
+  public static void main(String[] args) {
+    launch(args); //<-- entry point
+  }
+
+  @Override
+  public void start(Stage primaryStage) {
+    // build UI here
+    primaryStage.show();
+  }
+}
+```
+
+- App class inherits from abstract class Application
+- `main()` calls `launch(args)` and hands control to JavaFX
+- JavaFX calls overridden `start(Stage)` method
+- Build UI inside `start()` and call `stage.show()`
+
+### JavaFX Inheritance
+
+- HelloWorldApp extends Application
+  - Application is abstract &rarr; must @Override start
+  - `launch()` is inherited from Application
+- All UI controls share class hierarchy:
+  - Object &rarr; Node &rarr; Parent &rarr; Region &rarr; Control &rarr; ...
+  - Label, Button, and TextField all extend Control
+  - StackPane, VBox, HBox all extend Pane
+
+### Stage, Scene, Graph
+
+- Stage &rarr; the OS window
+  - Has title bar, minimize/maximize/close buttons
+- Scene &rarr; the content area inside the window
+  - Holds root node of the scene graph
+  - Defines width & height of the content
+- Scene Graph &rarr; the tree of all visual nodes
+  - Root node is layout container (e.g. StackPane)
+  - Children are UI controls or nested containers
+
+### Code: Creating Controls
+
+- Each UI element is created by constructing a Java object `new Label(...)`
+- Properties are set via setter methods: `setFill(), setFont(), etc.`
+- Label & Button extend Control; Ellipse and Text extend Shape/Node
+- No special syntax - standard Java object construction
+
+```Java
+@Override
+public void start(Stage primaryStage) {
+  Label label = new Label("Hello World!");
+  Button mainButton = new Button("I am alive!");
+
+  Ellipse e = new Ellipse(110, 70);
+  e.setFill(Color.GREENYELLOW);
+  Text t = new Text("Ahh yiss shapes");
+  t.setFont("Times New Roman", 24);
+```
+
+### Code: Building the Scene Graph
+
+- `StackPane` is the root layout &rarr; stacks children on top of each other, centered
+- `getChildren()` return an `ObservableList<Node>` &rarr; add controls to it
+- `Scene` wraps the root node with a fixed size
+- Stage receives the `Scene` and becomes visible with `show()`
+
+```Java
+StackPane root = new StackPane(label); // label passed to constructor
+root.getChildren().addAll(mainButton, ellipse, text);
+
+Scene scene = new Scene(root, 400, 300); // root node, width, height
+primaryStage.setTitle("JavaFX Hello World!");
+primaryStage.setScene(scene);
+primaryStage.show();
+```
+
+### Lambda Expressions: Event Handling
+
+```Java
+// anonymous class
+mainButton.setOnAction(
+  new EventHandler<ActionEvent>() {
+    @Override
+    public void handle(ActionEvent e) {
+      toggle(mainButton);
+    }
+  }
+);
+```
+
+Same code as lambda:
+
+```Java
+// lambda
+mainButton.setOnAction(
+  actionEvent -> {
+    toggle(mainButton);
+  }
+);
+```
+
+- `setOnAction()` expects `EventHandler<ActionEvent>`
+- Lambda expressions are shorthand for single-method anonymous classes
+- Both approaches valid; lambdas preferred for readability
+- `toggle()` method shows plain Java string logic
+
+### Event Handling: Anonymous Inner Classes
+
+```Java
+mainButton.setOnMouseEntered(new EventHandler<MouseEvent> () {
+  // anonymous class declaration
+  @Override
+  public void handle(MouseEvent event) {
+    double x = mainButton.getTranslateX();
+    double cX = event.getSceneX();
+    System.out.println("Where does this print?");
+  }
+});
+```
+
+- Anonymous inner classes implement an interface inline
+  - Same inheritance concepts
+- `EventHandler<MouseEvent>` interface has one method &rarr; `handle(MouseEvent)`
+
+### Common Layout Containers
+
+- StackPane
+  - Stacks children on top of each other, centered
+- VBox
+  - Arranges children vertically, top to bottom
+- HBox
+  - Arranges children horizontally, left to right
+- BorderPane
+  - Five regions: top, bottom, left, right, center
+- GridPane
+  - Row/Column grid layout
+
+```Java
+// vbox example:
+// 10px spacing
+VBox vbox = new VBox(10);
+vbox.getChildren().addAll(
+  label, button1, button2
+);
+
+// Hbox example
+HBox hbox = new HBox(10);
+hbox.getChildren().addAll(
+  btnA, btnB, btnC
+);
+// all extend Pane: extends region
+// same getChildren().add() pattern
+```
+
+### Slide Overview JavaFX
+
+- JavaFX is just Java classes &rarr; uses same OOP concepts
+- Our class `extends Application` & overrides `start(Stage)`
+- Scene graph is a tree: Stage &rarr; Scene &rarr; Root Layout &rarr; Child Nodes
+- UI Controls (Label, Button, etc.) are objects with getters, setters, and event handlers
+- Events are handled via functional interfaces
+  - Use lambdas (preferred) or anonymous inner classes
+- Gradle automates building & dependency management
+
+I didn't touch on everything the slides cover so make sure to go look through them!
+
 Notes:
 
 - Use shorthand: Small words or pieces of code that remind you of the content you were studying
