@@ -1,6 +1,18 @@
+<details>
+  <summary>Midterm 1</summary>
+  
+
+</details>
+
+---
+
+<details>
+  <summary>Midterm 2</summary>
+
 # Midterm 2 Review
 
 ## Table of Contents
+
 - [Key Concepts](#key-concepts)
   1. [Definitions](#definitions)
   2. [Operators](#additional-concepts)
@@ -21,7 +33,7 @@
   8. [Anonymous Inner Classes](#anonymous-inner-classes-event-handling)
   9. [Common Layout Containers](#common-layout-containers)
   10. [Slide Overview](#slide-overview-javafx)
-- [Tips For The Exam](#tips-for-the-exam-and-your-notes) 
+- [Tips For The Exam](#tips-for-the-exam-and-your-notes)
   1. [Exam](#exam)
   2. [Notes](#notes)
   3. [Studying](#studying)
@@ -530,5 +542,7 @@ hbox.getChildren().addAll(
 10. How do you write an anonymous inner class?
 11. What does `stage.show()` do?
 12. What abstract class does our program extend?
+
+</details>
 
 </details>
