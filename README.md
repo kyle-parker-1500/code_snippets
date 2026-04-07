@@ -1691,6 +1691,8 @@ hbox.getChildren().addAll(
 
 ## Fun Things We Did In Zoom That You Missed
 
+If you got to this before the Zoom session: Good job! Keep up this early studying! 
+
 <details>
   <summary>Questions:</summary>
 
