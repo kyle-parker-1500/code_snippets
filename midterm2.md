@@ -468,7 +468,8 @@ hbox.getChildren().addAll(
   3. Call Dr. C over and ask him to click 'Submit' for you so that you don't have to deal with the burden of clicking 'Submit'.
   - The answer was 2. Make sure, before submitting, that you review your answers. I like to mark answers that I'm unsure of using the bookmark feature of Canvas exams.
 
-Notes:
+
+**Notes:**
 
 - Use shorthand: Small words or pieces of code that remind you of the content you were studying
 - Put symbols & diagrams on your notes
@@ -476,7 +477,7 @@ Notes:
 - Group your notes by sections
   - It helps to plan out what you're going to put on your note sheet before
 
-Studying:
+**Studying:**
 
 - Use AI to quiz yourself on the material (I find this super effective!)
 - Use Quizlet to create flashcards for yourself and then play the fun matching game
@@ -495,5 +496,13 @@ Studying:
 2. What are the three general ways to write a print statement in Java?
 3. Draw the access modifier table. (This should be on your notes!)
 4. What are the 2 names for this access modifier? (to be clear you need to know both names)
+5. What does calling `launch(args)` do in JavaFX?
+6. How does StackPane work?
+7. What's the difference between VBox and HBox?
+8. When should you use lambdas?
+9. How do you write a lambda function?
+10. How do you write an anonymous inner class?
+11. What does `stage.show()` do?
+12. What abstract class does our program extend?
 
 </details>
