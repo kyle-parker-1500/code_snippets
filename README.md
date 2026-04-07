@@ -1,7 +1,7 @@
 <details>
   <summary>Midterm 1</summary>
     
-[To Midterm 2- Doesn't work if dropdown isn't down](#midterm-2-snippets)
+[To Midterm 2](#midterm-2-snippets)
   
 # Midterm 1 Snippets
 
@@ -1171,7 +1171,7 @@ public class StrategyPatternDemo {
 <details>
   <summary>Midterm 2</summary>
     
-[To Midterm 1- Doesn't work if dropdown isn't down](#midterm-1-snippets)
+[To Midterm 1](#midterm-1-snippets)
 
 # Midterm 2 Snippets 
 
