@@ -1,5 +1,32 @@
 # Midterm 2 Review
 
+## Table of Contents
+- [Key Concepts](#key-concepts)
+  1. [Definitions](#definitions)
+  2. [Operators](#additional-concepts)
+- [Test Your Knowledge](#sample-questions)
+  1. [UML](#test-your-knowledge-uml)
+  2. [Access Levels UML](#access-levels-uml)
+  3. [Inheritance](#test-your-knowledge-inheritance)
+  4. [Constructors](#test-your-knowledge-constructors)
+  5. [Types](#test-your-knowledge-types)
+- [JavaFX](#javafx)
+  1. [What is JavaFX](#what-is-javafx)
+  2. [Application Lifecycle](#application-lifecycle)
+  3. [Inheritance](#javafx-inheritance)
+  4. [Stage, Scene, Graph](#stage-scene-graph)
+  5. [Creating Controls](#code-creating-controls)
+  6. [Building The Scene](#code-building-the-scene-graph)
+  7. [Lambda](#lambda-expressions-event-handling)
+  8. [Anonymous Inner Classes](#anonymous-inner-classes-event-handling)
+  9. [Common Layout Containers](#common-layout-containers)
+  10. [Slide Overview](#slide-overview-javafx)
+- [Tips For The Exam](#tips-for-the-exam-and-your-notes) 
+  1. [Exam](#exam)
+  2. [Notes](#notes)
+  3. [Studying](#studying)
+- [Fun Things You Probably Missed](#fun-things-we-did-in-zoom-that-you-missed)
+
 By: Gabrielle Lake & Ignacio Gramajo &rarr; [Link to Slides](https://docs.google.com/presentation/d/1o4e36VhxbfPviAVb78mYuzaCNPVdI7zsbw7wAqcCOS0/edit?usp=sharing)
 
 ## Key Concepts:
@@ -386,7 +413,7 @@ mainButton.setOnAction(
 - Both approaches valid; lambdas preferred for readability
 - `toggle()` method shows plain Java string logic
 
-### Event Handling: Anonymous Inner Classes
+### Anonymous Inner Classes: Event Handling
 
 ```Java
 mainButton.setOnMouseEntered(new EventHandler<MouseEvent> () {
@@ -448,7 +475,7 @@ hbox.getChildren().addAll(
 
 ## Tips for the Exam (And your notes!)
 
-**Exam:**
+### Exam:
 
 - Read the prompt:
   - Don't read too fast because you may glaze over important details of the question
@@ -468,8 +495,7 @@ hbox.getChildren().addAll(
   3. Call Dr. C over and ask him to click 'Submit' for you so that you don't have to deal with the burden of clicking 'Submit'.
   - The answer was 2. Make sure, before submitting, that you review your answers. I like to mark answers that I'm unsure of using the bookmark feature of Canvas exams.
 
-
-**Notes:**
+### Notes:
 
 - Use shorthand: Small words or pieces of code that remind you of the content you were studying
 - Put symbols & diagrams on your notes
@@ -477,7 +503,7 @@ hbox.getChildren().addAll(
 - Group your notes by sections
   - It helps to plan out what you're going to put on your note sheet before
 
-**Studying:**
+### Studying:
 
 - Use AI to quiz yourself on the material (I find this super effective!)
 - Use Quizlet to create flashcards for yourself and then play the fun matching game
