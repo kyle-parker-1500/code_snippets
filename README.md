@@ -980,6 +980,7 @@ class LightOnCommand implements Command {
     this.light = light;
   }
 
+  @Override
   public void execute() {
     light.on();
   }
@@ -990,6 +991,8 @@ class LightOffCommand implements Command {
   public LightOffCommand(Light light) {
     this.light = light;
   }
+
+  @Override
   public void execute() {
     light.off();
   }
@@ -1031,6 +1034,7 @@ class StereoOffCommand implements Command {
     this.stereo = stereo;
   }
 
+  @Override
   public void execute() {
     stereo.off();
   }
@@ -1041,6 +1045,8 @@ class StereoOnWithCDCommand implements Command {
   public StereoOnWithCDCommand(Stereo stereo) {
     this.stereo = stereo;
   }
+
+  @Override
   public void execute() {
     stereo.on();
     stereo.setCD();
@@ -1163,7 +1169,6 @@ public class StrategyPatternDemo {
 }
 ```
 
-
 </details>
 
 ---
@@ -1173,7 +1178,7 @@ public class StrategyPatternDemo {
     
 [To Midterm 1](#midterm-1-snippets)
 
-# Midterm 2 Snippets 
+# Midterm 2 Snippets
 
 ## Table of Contents
 
@@ -1539,7 +1544,7 @@ public void start(Stage primaryStage) {
   Ellipse e = new Ellipse(110, 70);
   e.setFill(Color.GREENYELLOW);
   Text t = new Text("Ahh yiss shapes");
-  t.setFont("Times New Roman", 24);
+  t.setFont(new Font("Times New Roman", 24));
 ```
 
 ### Code: Building the Scene Graph
@@ -1573,7 +1578,7 @@ mainButton.setOnAction(
 );
 ```
 
-Same code as lambda:
+Same code as anonymous inner class (in the form of a lambda):
 
 ```Java
 // lambda
@@ -1691,7 +1696,7 @@ hbox.getChildren().addAll(
 
 ## Fun Things We Did In Zoom That You Missed
 
-If you got to this before the Zoom session: Good job! Keep up this early studying! 
+If you got to this before the Zoom session: Good job! Keep up this early studying!
 
 <details>
   <summary>Questions:</summary>
@@ -1712,3 +1717,4 @@ If you got to this before the Zoom session: Good job! Keep up this early studyin
 </details>
 
 </details>
+
