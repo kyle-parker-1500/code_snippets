@@ -1993,6 +1993,7 @@ Answering all of these will more than prepare you for the final. You'll almost b
 14. Why are design patterns important?
 15. Will you be using design patterns again in the tech industry (hint: the answer is yes &rarr; better learn them now)
 16. Can we instantiate a static class?
+17. What access modifier are methods inside an interface automatically assigned? (Yes, I know there's 2 17's but if I want to replace them I have to go through 35/2 questions to do so so... 🤷)
 17. What about an abstract class?
 18. What can't abstract classes be declared as?
 19. What does calling `super()` in a child class do?
@@ -2022,6 +2023,10 @@ Final final prep notes:
 Good luck on the Final!
 
 Reach out to (insert current TA name here) if you have any final super urgent questions before the final.
+  
+[To Top (Midterm 1)](#midterm-1-snippets) <br>
+[To Middle (Midterm 2)](#midterm-2-snippets) <br>
+[To Final Stuff](#final-snippets-and-questions) <br>
 
 
 ### Credits
