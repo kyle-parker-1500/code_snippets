@@ -1,7 +1,8 @@
 <details>
   <summary>Midterm 1</summary>
     
-[To Midterm 2](#midterm-2-snippets)
+[To Midterm 2](#midterm-2-snippets) <br>
+[To Final](#final-snippets-and-questions)
   
 # Midterm 1 Snippets
 
@@ -1176,7 +1177,8 @@ public class StrategyPatternDemo {
 <details>
   <summary>Midterm 2</summary>
     
-[To Midterm 1](#midterm-1-snippets)
+[To Midterm 1](#midterm-1-snippets) <br>
+[To Final](#final-snippets-and-questions)
 
 # Midterm 2 Snippets
 
@@ -1718,3 +1720,317 @@ If you got to this before the Zoom session: Good job! Keep up this early studyin
 
 </details>
 
+<hr>
+
+<details>
+  <summary>Final</summary>
+  
+[To Midterm 1](#midterm-1-snippets)<br>
+[To Midterm 2](#midterm-2-snippets)<br>
+[To Credits](#credits)
+  
+# Final Snippets and Questions
+
+## Prep Code Snippets (Don't run these in your IDE &rarr; these are for your brain)
+
+Assume all imports are satisfied.
+
+<hr>
+Problem 1
+
+```Java
+interface DoesStuff {
+    int age = 25;
+    String name = "Bryan";
+    void sayMyName();    
+}
+```
+
+```Java
+1. public class TestError implements DoesStuff {
+2.   int age = 25;
+3.   public String name = "Kyle"; 
+4.   public List<String> classes; 
+5.   
+6.   TestError(String n, int a) {
+7.     name = n;
+8.     classes = new ArrayList<>();
+9.   }
+10.   
+11.   private void addClass(String myClass) {
+12.     classes.add(myClass);
+13.   }
+14.   
+15.   private void showClasses() {
+16.     classes.forEach((c) -> {
+17.         System.out.println("Class: " + c);
+18.     });
+19.   }
+20.   
+21.   @Override
+22.   public void sayMyName() {
+23.     System.out.println("Why don't I output?");
+24.   }
+25.   
+26.   public static void main(String[] args) {
+27.     TestError test = new TestError("Steven (emotional support TA for the TAs Sp2026)", 23);
+28.     System.out.printf("%n%s%n", test.name); // what is this not an example of
+29.     test.addClass("CST205");
+30.     test.addClass("CST338");
+31.     test.addClass("CST438");
+32. 
+33.     test.showClasses();
+34.     
+35.     TestError test2 = new TestError("Dr. C", 42) {
+36.         @Override
+37.         public void sayMyName() {
+38.             System.out.println("My name is " + name);
+39.         }  
+40.     };
+41.     test2.sayMyName();
+42.   } 
+```
+
+Question 1: What is outputted?
+
+Question 2: What is line 15 an example of?
+
+Question 3: What is the access modifier for `age`?
+
+Question 4: What is the runtime class of `classes`?
+
+Sub-Question: On line 27 &rarr; what PIE-A concept is `test.name` not an example of?
+
+<hr>
+
+Problem 2:
+
+```Java
+TextField inputField = new TextField();
+inputField.setPromptText("Ferb what are we gonna do today?");
+Button addBtn  = new Button("Add");
+Button backBtn = new Button("Back");
+
+addBtn.setOnAction(e -> {
+    String text = inputField;
+    if (!text.isEmpty()) {
+        db.insertItem(text);
+        listView.getItems().setAll(db.getAllItems());  // refresh list
+        inputField.clear();
+    }
+});
+```
+
+<details>
+    <summary>Answer</summary>
+
+    String text = inputField.getText().trim();
+
+</details>
+
+Question 1: What is the error with this code?
+
+Question 2: What code is needed to fix it?
+
+<hr>
+
+Problem 3:
+
+```Java
+public static DatabaseManager getInstance() {
+  if (DatabaseManager.getInstance() == null) {
+      return new DatabaseManager;
+  }
+  return DatabaseManager.getInstance();
+}
+```
+
+<details>
+    <summary>Answer</summary>
+
+    public static DatabaseManager instance = null;
+    
+    public static DatabaseManager getInstance() {
+        if (instance == null) {
+            instance = new DatabaseManager();
+        }
+        return instance;
+    }
+
+</details>
+
+Question 1: What is wrong with this singleton?
+
+Question 2: What code is needed to fix it?
+
+Question 3: Why do we need a singleton for a Database instance?
+
+<hr>
+
+Problem 4:
+
+```Java
+private void createTables() {
+    String sql = """
+        CREATE TABLE items (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            name    TEXT    NOT NULL,
+            done    INTEGER NOT NULL DEFAULT 0,
+            created TEXT    DEFAULT (datetime('now'))
+        )
+        """;
+    try (Statement stmt = connection.createStatement()) {
+        stmt.execute();
+    } catch (SQLException e) {
+        System.err.println("createTables failed: " + e.getMessage());
+    }
+}
+```
+
+Question 1: What are the 2 issues with this code? (Hint: 1 issue is with SQL, 1 issue is in Java)
+
+<details>
+    <summary>Answer (Because I think SQL one is hard)</summary>
+    
+    CREATE TABLE IF NOT EXISTS items (...)
+    
+    This is bad because we can overwrite data if we don't do this. Could possibly erase millions
+    of records.
+    
+    You got the Java one on your own.
+
+</details>
+
+Question 2: What does the `.execute()` method do?
+
+Sub-Question: What does the `.executeUpdate()` method do?
+
+<hr>
+
+Observer Design Pattern:
+
+```Java
+public class Main extends Application { // this part is important too! why?
+
+    @Override
+    public void start(Stage stage) {
+        Slider slider = new Slider(0, 100, 50);
+
+        slider.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable,
+                                Number oldValue, Number newValue) {
+                System.out.println("Slider moved to: " + newValue);
+            }
+        });
+
+        VBox root = new VBox(slider);
+        stage.setScene(new Scene(root, 300, 200));
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+```
+
+No questions. This is review!
+
+<hr>
+
+Scene Factory Design Pattern:
+
+```Java
+public static Scene create(SceneType type, Stage stage, DatabaseManager db) {
+    return cache.computeIfAbsent(type, t -> switch (t) {
+        case MAIN      -> buildMainScene(stage, db);
+        case DASHBOARD -> buildDashboardScene(stage, db);
+    });
+}
+```
+
+
+<hr>
+
+Singleton Design Pattern:
+
+```Java
+public class Singleton {
+
+    private static Singleton instance = null;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+```
+
+<hr>
+
+General Questions:
+
+Answering all of these will more than prepare you for the final. You'll almost be ready to push .env to prod.
+
+1. What is a lambda expression?
+2. What is an anonymous inner class?
+3. What's the benefit of an anonymous inner class over a lambda expression?
+4. What's the benefit of a lambda expression over an anonymous inner class?
+5. What's the easiest way to loop over an `ArrayList` of Strings?
+6. What is a `HashMap`? Name it's 3 main methods.
+7. How do we loop through all values in a `HashMap`?
+8. How do we access a value in a `HashMap`?
+9. What are the 2 values in a `HashMap` referred to as?
+10. What are generics? 
+11. Why do we use them?
+12. What are design patterns?
+13. Name your 5 favorite design patterns and give a 1 sentence reason you like each (it must be a valid reason)
+14. Why are design patterns important?
+15. Will you be using design patterns again in the tech industry (hint: the answer is yes &rarr; better learn them now)
+16. Can we instantiate a static class?
+17. What about an abstract class?
+18. What can't abstract classes be declared as?
+19. What does calling `super()` in a child class do?
+20. Can we pass values to a parent class through a child class?
+21. What does calling `this()` in a parent class do? 
+22. How about a child class?
+23. What does the line of an arrow that points to an `interface` look like?
+24. What about a concrete class? 
+25. What about an abstract class?
+26. What does the UML symbol for an abstract class look like?
+27. Name all 4 elements of PIE-A as fast as you can.
+28. Explain the observer design pattern to your youngest cousin or least intelligent friend (just kidding about the 2nd one) &rarr; make sure you explain it like you're talking to a 5 year old. *For right now explain it to the person sitting next to you. (review session)*
+29. What does the JavaFX main class look like? 
+30. What is a stage in JavaFX?
+31. Name your favorite SQLite types and give a bs reason for each.
+32. What does an observer look like in JavaFX? No, seriously, I only know what it looks like in Android. 🥲
+33. Don't forget about inheritance stuff!
+34. It would be really funny if each of you brought a different color of construction paper (cardstock) to the final exam &rarr; coordinate with each other and *don't* tell Dr. C. This is technically what you would call a prank (it doubles as a way to take the edge off for finals). It would be even funnier if you didn't acknowledge how weird it was until he does (so don't laugh if you do this or you see someone else doing it). 
+
+Final final prep notes:
+- Your old notesheet will be super helpful since the exam is cumulative
+- You can and should go back and memorize all the questions from all quizzes (and the midterms) &rarr; remember you can put stuff on your notesheet too!
+- Be sure to review plicker questions too!
+- Look at past assignments (especially JavaFX assignments) and make sure you know how to do the stuff still
+- Review design patterns: Observer, factory, singleton (the others)
+
+Good luck on the Final!
+
+Reach out to (insert current TA name here) if you have any final super urgent questions before the final.
+
+
+### Credits
+Sincere Thanks to:
+
+**Gabrielle Lake** and **Ignacio Gramajo**
+
+for letting me stea \*cough\* ... borrow\* their materials <br>
+and finally Bryan for being extremely helpful and Dr. C for being an awesome professor!
+
+Hope this helps future people too!
+</details>
